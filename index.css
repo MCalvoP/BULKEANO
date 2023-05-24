@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.contacto{
+    border-bottom: 1px solid #eceef0;
+}
+
+.contactanos{
+    padding: 13px;
+    display: flex;
+    font-size: 12px;
+    float: left;
+}
+
+.icon{
+    width: 15px;
+    margin-right: 5px;
+}
+
+hr{
+    margin: 0px 5px 0px 5px;
+    color: #eceef0;
+    background-color: #310000;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 97, 97);
+}
+
+li{
+    list-style: none;
+}
+
+.redes{
+    display: flex;
+    justify-content: end;
+    transition: all 0.5;
+}
+
+.social{
+    padding: 6px;
+    width: 25px;
+}
+
+.enlaces{
+    border-left: 1px solid #eceef0;
+    transition: background-color 0.3s ease;
+}   
+
+.enlaces:hover{
+    background-color: pink;
+}
+
+h1{
+    font-family: 'Raleway', sans-serif;
+    
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.title{
+    display: flex;
+    padding: 10px;
+    
+}
