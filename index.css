@@ -5,9 +5,8 @@
     overflow-x: hidden;
 }
 
-header{
-  height: 170px;
-  overflow: hidden;
+html {
+  scroll-behavior: smooth;
 }
 
 .contacto{
@@ -58,7 +57,7 @@ li{
 }   
 
 .enlaces:hover{
-    background-color: rgba(0, 192, 16, 0.836);
+    background-color: #009a2c;
 }
 
 h1{
@@ -77,8 +76,8 @@ h1{
 }
 
 .menu-container {
-    position: relative;
-    top: -10vh;
+    position: absolute;
+    top: 13vh;
     left: 140vh;
   }
   
@@ -154,6 +153,30 @@ h1{
 
 .menu a:hover{
   color: white;
+}
+
+.arrow-container{
+  display: flex;
+  justify-content: end;
+}
+
+.arrow {
+  position: fixed;
+  width: 30px;
+  z-index: 1;
+  background-color: #353535a1;
+  bottom: 10vh;
+  right: 3vh;
+  padding: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.arrow:hover{
+  background-color: #009a2c;
+}
+
+.arrow-container a[href="#top"] {
+  transition: 0.5s ease-in-out;
 }
 
 .slider-frame{

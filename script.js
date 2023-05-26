@@ -29,3 +29,18 @@ function closeMenu(event) {
   }
 }
 
+document.getElementById('scroll-to-top').addEventListener('click', function(event) {
+  event.preventDefault();
+  const duration = 500; // Duración de la animación en milisegundos
+  const scrollHeight = window.pageYOffset;
+  const scrollStep = -scrollHeight / (duration / 15);
+
+  const scrollAnimation = setInterval(function() {
+    if (window.pageYOffset === 0) {
+      clearInterval(scrollAnimation);
+    } else {
+      window.scrollBy(0, scrollStep);
+    }
+  }, 15);
+});
+
